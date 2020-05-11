@@ -1,5 +1,5 @@
 // import the ORM to create functions that will interact with the database
-var orm = require("../config/orm");
+var orm = require("../config/orm.js");
 
 var burger = {
     all: function(cb){
@@ -8,13 +8,13 @@ var burger = {
         })
     },
     // the variables cols and vals are arrays
-    create: function(cols, vals, cb){
-        orm.create("burgers", cols, vals, function(res){
+    create: function(addon, cb){
+        orm.create("burgers", "burger_name", addon, function(res){
             cb(res);
         });
     },
-    update: function(colVal, boolean, cb){
-        orm.update("burgers", colVal, boolean, function(res){
+    update: function(colVal, id, cb){
+        orm.update(colVal, id, function(res){
             cb(res);
         });
     }
