@@ -10,7 +10,7 @@ if (process.env.JAWSDB_URL){
   port: 3306,
   user: process.env.ROOT,
   password: process.env.PSWD,
-  database: "burgers_db"
+  database: process.env.DB
 }
 )};
 
