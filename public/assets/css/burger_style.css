@@ -7,3 +7,7 @@
 .lead {
     text-align: center;
 }
+
+h1.display-4 {
+    display: block;
+}
