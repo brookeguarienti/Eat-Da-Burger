@@ -1,0 +1,9 @@
+/* image styling */
+#burgerImg {
+    height: 350px;
+    width: 350px;
+}
+
+.lead {
+    text-align: center;
+}
