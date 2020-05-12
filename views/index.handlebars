@@ -1,14 +1,15 @@
 <div class="container">
-    <div class="jumbotron text-center bg text-white"></div>
-    <h1 class="display-4" id="app-title">Eat-Da-Burger!<img id= "burgerImg" src="/assets/img/burger.jpg" class="img-fluid"></h1>
-        <p class="lead">Come get ya Burger!</p>
+    <div class="jumbotron text-center bg text-white">
+    <h1 class="display-4" id="app-title">Eat-Da-Burger!<img id= "burgerImg" src="/assets/img/burger.jpg" height="350" width="350"></h1>
+        <p class="lead">Come get ya Burger at Eat-Da-Burger! Home of the Whatever-You-Want Burger Joint!</p>
+</div>
 </div>
 
 
 <div class="row">
     <div class="col-sm-12">
         <div class="card border border">
-            <div class="card-header bg text-black">
+            <div class="card-header bg-success text-black">
                 Pick your burger!
             </div>
             {{!-- Create/add burger form --}}
@@ -18,7 +19,7 @@
                         <label for="burger">Place your order:</label>
                         <input type="text" class="form-control" name="burger_name" id="toGoBurger" placeholder="Write order here">
                     </div>
-                    <button class="btn btn" type="submit">Place order</button>
+                    <button class="btn btn-success" type="submit">Place order</button>
                 </form>
             </div>
         </div>
@@ -50,7 +51,7 @@
     </div>
     <div class="col-md-6 mt-4">
         <div class="card border border-secondary devoured-card">
-            <div class="card-header bg text-black" id="devoured-card-header">Devoured Burgers</div>
+            <div class="card-header bg-success text-black" id="devoured-card-header">Devoured Burgers</div>
             {{!-- Card for the devoured burgers --}}
             <div class="card-body">
                 {{#each burgers}}
